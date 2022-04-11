@@ -1,0 +1,429 @@
+.inbox__container {
+  background-color: #ebeff4;
+  width: 100%;
+  height: 86vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Nunito Sans", sans-serif;
+  position: relative;
+  &__filter {
+    height: 80px;
+    width: 95%;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: space-between;
+
+    &__left {
+      display: flex;
+      justify-content: space-evenly;
+      font-family: "Nunito Sans", sans-serif;
+    }
+    &__right {
+      display: flex;
+      align-items: center;
+      font-family: "Nunito Sans", sans-serif;
+      &__selectPage {
+        &__label {
+          color: rgb(89, 100, 255);
+        }
+      }
+      &__page {
+        display: flex;
+        align-items: center;
+      }
+      &__search {
+        border: none;
+        color: #5964ff;
+        border-radius: 5px;
+        text-decoration: none;
+        cursor: pointer;
+        margin-left: 5px;
+        font-size: 14px;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: bold;
+        max-height: 34px;
+        height: 34px;
+        position: relative;
+        background-color: #dae0e8;
+        &__searchbar {
+          border: none;
+          color: #747474;
+          border-radius: 5px;
+          text-decoration: none;
+          cursor: pointer;
+          margin-left: 5px;
+          font-size: 14px;
+          font-family: "Nunito Sans", sans-serif;
+          font-weight: bold;
+          max-height: 34px;
+          height: 34px;
+          background-color: inherit;
+        }
+      }
+    }
+  }
+
+  &__filterInfo {
+    display: flex;
+    width: 94%;
+    font-weight: 500;
+    &__savefilter {
+      color: rgb(179, 179, 179);
+      background-color: transparent;
+      border: none;
+      font-weight: 500;
+      font-size: 15px;
+    }
+    &__clearfilter {
+      background-color: transparent;
+      border: none;
+      color: red;
+      font-size: 15px;
+    }
+  }
+  &__filterInputs {
+    width: 95%;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__dropdown {
+      position: relative;
+      background-color: inherit;
+      padding: 5px;
+
+      &__button:hover {
+        border: 2px solid rgb(89, 100, 255);
+      }
+      &__button {
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 14px;
+        line-height: 30px;
+        border-radius: 4px;
+        border: 2px solid rgb(218, 224, 232);
+        color: rgb(140, 150, 173);
+        padding: 0px 8px;
+        transition: all 0.2s ease 0s;
+        background-color: white;
+        height: 34px !important;
+        &__span {
+          font-weight: bold;
+          color: #000000;
+          padding-right: 5px;
+        }
+      }
+      &__ul {
+        display: none;
+        position: absolute;
+        background-color: inherit;
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        &__li {
+          color: #000000;
+          list-style: none;
+          display: flex;
+          justify-content: flex-start;
+          align-content: flex-end;
+          align-items: flex-end;
+          padding: 10px 0px 0px 10px;
+          background-color: inherit;
+        }
+      }
+    }
+    &__dropdown:hover &__dropdown__ul {
+      display: flex;
+      flex-direction: column;
+      border-top: 2px solid rgb(45, 100, 143);
+    }
+
+    &__search {
+      border: none;
+      background-color: transparent;
+      resize: none;
+      outline: none;
+
+      color: #5964ff;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      margin-left: 5px;
+      font-size: 14px;
+      font-family: "Nunito Sans", sans-serif;
+      font-weight: bold;
+      border: 2px solid rgb(218, 224, 232);
+
+      position: relative;
+      background-color: #ffffff;
+
+      &__searchbar {
+        border: none;
+        color: #747474;
+        border-radius: 5px;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 14px;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: bold;
+        max-height: 30px;
+        height: 30px;
+        background-color: inherit;
+      }
+    }
+  }
+  &__messagessmall {
+    height: 65% !important;
+  }
+  &__messages {
+    width: 95%;
+    height: 80%;
+    background-color: inherit;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+
+    &__sidebar {
+      overflow-y: auto;
+      margin-right: 2px;
+      width: 30%;
+      background-color: inherit;
+      &__search {
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 14px;
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: bold;
+        max-height: 34px;
+        height: 34px;
+        position: relative;
+        background-color: #dae0e8;
+        display: flex;
+        justify-content: space-between;
+
+        &__searchbar {
+          width: 100%;
+          height: 100%;
+          border: none;
+          color: #747474;
+          text-decoration: none;
+          cursor: pointer;
+          font-size: 14px;
+          font-family: "Nunito Sans", sans-serif;
+          font-weight: bold;
+          background-color: inherit;
+          padding: 0px 5px;
+        }
+        &__searchbarIcon {
+          height: 100%;
+          border: none;
+          color: #747474;
+          cursor: pointer;
+          background-color: inherit;
+        }
+      }
+      &__contacts {
+        margin-top: 2px;
+        width: 100%;
+        &__contact {
+          width: 100%;
+          background-color: inherit;
+          padding: 10px 0px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          border-radius: 4px;
+
+          margin-bottom: 2px;
+          cursor: pointer;
+          &__checkbox {
+            width: 5%;
+            padding: 5px;
+
+            &__check-box {
+              transform: scale(1.5);
+            }
+          }
+          &__profileimg {
+            width: 15%;
+            padding: 5px;
+          }
+          &__info {
+            width: 75%;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+
+            &__heading {
+              width: 100%;
+              display: flex;
+              justify-content: space-between;
+              &__name {
+                width: calc(100% - 150px);
+                line-height: 20px;
+                font-family: "Nunito Sans", sans-serif;
+                font-size: 14px;
+                font-weight: bold;
+                color: rgb(51, 57, 81);
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+                margin-bottom: 0px;
+              }
+              &__date {
+                font-size: 12px;
+              }
+            }
+            &__subheading {
+              line-height: 20px;
+              font-size: 14px;
+              color: rgb(51, 57, 81);
+              text-overflow: ellipsis;
+              white-space: nowrap;
+              overflow: hidden;
+              margin-bottom: 4px;
+            }
+          }
+        }
+        &__contact:hover {
+          background-color: white;
+        }
+      }
+    }
+    &__content {
+      margin-left: 2px;
+      width: 70%;
+      // background-color: rgb(255, 255, 255);
+      display: flex;
+      flex-direction: column;
+
+      &__header {
+        background-color: white;
+        display: flex;
+        margin-bottom: 2px;
+        border-radius: 4px;
+        &__left {
+        }
+        &__right {
+        }
+      }
+      &__texts {
+        background-color: white;
+        border-radius: 4px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        &__recieved {
+          display: flex;
+          justify-content: start;
+        }
+        &__sent {
+          display: flex;
+          justify-content: end;
+        }
+        &__writemsg {
+          position: absolute;
+          height: 50px;
+          border-radius: 20px;
+          bottom: 0;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #747474;
+          border: 2px solid gray;
+          &__input {
+            &__inputfield {
+              width: 80%;
+            }
+            &__inputfieldoptions {
+              // width: 30%;
+              display: flex;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__getStarted {
+    z-index: 2147483647;
+    width: 169px;
+    height: 40px;
+    left: 30px;
+    bottom: 80px;
+    border-radius: 30px;
+    // box-shadow: rgb(0 0 0 / 9%) 0px 1px 6px, rgb(0 0 0 / 18%) 0px 2px 30px;
+    border: none;
+    position: fixed;
+    cursor: pointer;
+    background: rgb(51, 57, 81);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__icon {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 0px;
+      left: 8px;
+      &__icon {
+        font-size: xx-large;
+        color: #fff;
+      }
+    }
+    &__text {
+      white-space: nowrap;
+      display: inline-block;
+      padding: 10px 24px 10px 8px;
+      font-size: 18px;
+      font-weight: 600;
+      font-family: "Nunito Sans", sans-serif;
+      color: rgb(255, 255, 255);
+      position: absolute;
+      top: 0px;
+      left: 40px;
+    }
+  }
+  &__pic {
+    background-image: url("https://image.crisp.chat/process/thumbnail/?url=https%3A%2F%2Fstorage.crisp.chat%2Fusers%2Favatar%2Foperator%2F49bcf9cf4c3f1000%2Fvedran-leaddeltacom-yellow-150_jakqdi.png&width=240&height=240&1646407572811");
+
+    z-index: 2147483647;
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+    right: 50px;
+    bottom: 120px;
+    object-fit: contain;
+    border-radius: 50%;
+    position: fixed;
+    cursor: pointer;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+.grey {
+  color: grey;
+}
+.divider {
+  padding: 0px 5px;
+  color: rgb(172, 172, 172);
+  display: flex;
+  align-self: center;
+}
+.displayNone {
+  display: none;
+}

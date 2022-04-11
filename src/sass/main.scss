@@ -1,0 +1,34 @@
+//SASS Lead Delta
+
+@import "../index.scss";
+
+@import "../App.scss";
+
+/*                                 Pages                                 */
+/* -------------------------------------------------------------------------- */
+//connection page
+@import "../pages/styles/tags.scss";
+@import "../pages/styles/inbox.scss";
+@import "../pages/styles/template.scss";
+@import "../pages/styles/activitylog.scss";
+@import "../pages/styles/connections.scss";
+@import "../pages/styles/integrations.scss";
+//!conection page
+/* ------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                 Components                                    */
+/* -------------------------------------------------------------------------- */
+//Navbar
+@import "../components/styles/navbar.scss";
+//!Navbar
+/* ------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+
+/*                                 SubComponents                                    */
+/* -------------------------------------------------------------------------- */
+//button
+@import "../subComponents/styles/button.scss";
+//!button
+/* ------------------------------------------------------------------------- */

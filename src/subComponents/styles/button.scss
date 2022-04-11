@@ -1,0 +1,70 @@
+.button:disabled {
+  cursor: default;
+  background-color: rgb(246, 248, 251);
+  color: rgb(184, 191, 207);
+  // border: 1px solid rgb(184, 191, 207);
+  border: none;
+}
+.button {
+  border: none;
+  color: #5964ff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  max-height: 34px;
+  height: 34px;
+  position: relative;
+  background-color: #fff;
+  &__buttonIcon {
+    color: rgb(140, 150, 173);
+  }
+}
+
+.buttongroupL {
+  border: none;
+  color: #5964ff;
+  padding: 5px 10px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 1px;
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  max-height: 34px;
+  height: 34px;
+  position: relative;
+  background-color: #fff;
+  &__buttonIcon {
+    color: rgb(140, 150, 173);
+  }
+}
+.buttongroupR {
+  border: none;
+  color: #5964ff;
+  padding: 5px 10px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 1px;
+  margin-right: 5px;
+  font-size: 14px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+  max-height: 34px;
+  height: 34px;
+  position: relative;
+  background-color: #fff;
+  &__buttonIcon {
+    color: rgb(140, 150, 173);
+  }
+}
